@@ -1,0 +1,12 @@
+# Project exclude paths
+/out/
+
+*.jar
+*.class
+*.zip
+**/*.wav
+/resources/
+
+target/
+/.idea/
+/External Libraries/
