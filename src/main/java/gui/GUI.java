@@ -129,23 +129,23 @@ public class GUI extends Application {
         root.setTop(terminalArea);
         root.setBottom(bottomSection);
 
-        ImageView backgroundImage = new ImageView(new Image(getClass().getResourceAsStream("/R.png")));
-        backgroundImage.setPreserveRatio(false);
-        backgroundImage.fitWidthProperty().bind(stage.widthProperty());
-        backgroundImage.fitHeightProperty().bind(stage.heightProperty());
-
-        Image img = new Image(getClass().getResourceAsStream("/map.png"));
-        ImageView imgView = new ImageView(img);
-        imgView.setFitWidth(470);
-        imgView.setPreserveRatio(true);
-        StackPane.setAlignment(imgView, Pos.BOTTOM_RIGHT);
-        StackPane.setMargin(imgView, new Insets(10));
+//        ImageView backgroundImage = new ImageView(new Image(getClass().getResourceAsStream("/R.png")));
+//        backgroundImage.setPreserveRatio(false);
+//        backgroundImage.fitWidthProperty().bind(stage.widthProperty());
+//        backgroundImage.fitHeightProperty().bind(stage.heightProperty());
+//
+//        Image img = new Image(getClass().getResourceAsStream("/map.png"));
+//        ImageView imgView = new ImageView(img);
+//        imgView.setFitWidth(470);
+//        imgView.setPreserveRatio(true);
+//        StackPane.setAlignment(imgView, Pos.BOTTOM_RIGHT);
+//        StackPane.setMargin(imgView, new Insets(10));
 
         StackPane mainLayout = new StackPane();
 
-        mainLayout.getChildren().add(backgroundImage);
+        //mainLayout.getChildren().add(backgroundImage);
         mainLayout.getChildren().add(root);
-        mainLayout.getChildren().add(imgView);
+        //mainLayout.getChildren().add(imgView);
 
         Scene scene = new Scene(mainLayout, 1000, 700);
         stage.setScene(scene);

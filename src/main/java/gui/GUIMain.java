@@ -1,7 +1,7 @@
 package gui;
 
 public class GUIMain {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         GUI.main(args);
     }
 }
